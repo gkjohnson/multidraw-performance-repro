@@ -1,4 +1,4 @@
-# multidraw-performnce-repro
+# multidraw-performance-repro
 
 Reproduction case demonstrating a drastic performance dip when drawing instances with the WebGL `EXT_MULTI_DRAW` extension. The repro compares drawing 500,000 instances to drawArraysInstanced and a texture upload.
 
