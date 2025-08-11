@@ -8,7 +8,7 @@ Reproduction case demonstrating a drastic performance dip when drawing instances
 
 It seems there is some unexplained bottleneck impacting the performance of the multi draw extension.
 
-### Performance
+## Performance
 
 Framerate measured on a "2021 Mackbook M1 Pro, OSX 15.6" and "Chrome 139.0.7258.66" using the stats panel in the upper left of the demo page. Note that the framerate of the browser caps at 120 fps.
 
@@ -18,18 +18,18 @@ Framerate measured on a "2021 Mackbook M1 Pro, OSX 15.6" and "Chrome 139.0.7258.
 
 Multidraw incurs at least an 80% drop in performance when issuing the command with a large amount of objects.
 
-### Modes
+## Modes
 
 Here the multiple modes of demo are explained.
 
-**TEXTURE_UPLOAD**
+### TEXTURE_UPLOAD
 
 Re-uploads ~32MB of texture data every frame and draws the geometry using `gl.drawArrays`.
 
-**INSTANCING**
+### INSTANCING
 
 Draws the geometry as 500,000 instances using `gl.drawArraysInstanced`.
 
-**MULTI_DRAW**
+### MULTI_DRAW
 
 Draws the geometry as 500,000 instances using `EXT_MULTI_DRAW` extension and `ext.multiDrawArraysWEBGL`. Both the `firstsList` and `countsList` are Int32Arrays with 500,000 elements resulting in a total of 4MB that need to be issued to the GPU.
