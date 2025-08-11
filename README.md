@@ -8,7 +8,7 @@ Reproduction case demonstrating a drastic performance dip when drawing instances
 
 It seems there is some unexplained bottleneck impacting the performance of the multi draw extension.
 
-See the repro [here](https://gkjohnson.github.io/multidraw-performance-repro).
+See the live repro [here](https://gkjohnson.github.io/multidraw-performance-repro) and code [here](./index.js).
 
 ## Performance
 
