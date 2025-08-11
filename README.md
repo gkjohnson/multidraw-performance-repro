@@ -18,7 +18,7 @@ Framerate measured on a "2021 Mackbook M1 Pro, OSX 15.6" and "Chrome 139.0.7258.
 |---|---|---|
 | 21 fps | 120 fps | 120 fps |
 
-Multidraw incurs at least an 80% drop in performance when issuing the command with a large amount of objects.
+Multidraw incurs at least an 80% drop in performance when issuing the command with a large amount of objects. Raising the number of instances and texture size further show that multi draw seems to be 90-95% slower than instancing.
 
 ## Modes
 
