@@ -8,6 +8,8 @@ Reproduction case demonstrating a drastic performance dip when drawing instances
 
 It seems there is some unexplained bottleneck impacting the performance of the multi draw extension.
 
+See the repro [here](https://gkjohnson.github.io/multidraw-performance-repro).
+
 ## Performance
 
 Framerate measured on a "2021 Mackbook M1 Pro, OSX 15.6" and "Chrome 139.0.7258.66" using the stats panel in the upper left of the demo page. Note that the framerate of the browser caps at 120 fps.
