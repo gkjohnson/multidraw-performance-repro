@@ -3,8 +3,8 @@
 Reproduction case demonstrating a drastic performance dip when drawing instances with the WebGL `EXT_MULTI_DRAW` extension. The repro compares drawing 500,000 instances to drawArraysInstanced and a texture upload.
 
 - Geometry is drawn offscreen to remove any possibility of fragment shading being the performance bottleneck.
-- Multi draw is compared to multiDrawArrays to demonstrate that simply drawing many instances is not a bottleneck on its own.
-- Multi draw is compared to uploading a large texture every frame to demonstrate that uploading "start" and "count" buffers for multi draw does not lead to a performance bottleneck on its own.
+- `multiDrawArrays` is compared to `drawArraysInstanced` to demonstrate that simply drawing many instances is not a bottleneck on its own.
+- `multiDrawArrays` is compared to uploading a large texture every frame to demonstrate that uploading "firstsList" and "countsList" buffers for multi draw does not lead to a performance bottleneck on its own.
 
 It seems there is some unexplained bottleneck impacting the performance of the multi draw extension.
 
